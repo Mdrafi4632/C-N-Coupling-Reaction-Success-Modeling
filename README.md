@@ -22,6 +22,7 @@ The project focuses on five tasks:
 Predict the outcome of Buchwald–Hartwig amination (C–N coupling) reactions from molecular fingerprints and reaction conditions, using a 41-model pool combined via k-way Combinatorial Fusion Analysis (CFA). Two task formulations live in this repo:
 
 v1 — yield regression. Predict continuous yield (0–100%).
+
 v2 — success classification. Predict whether yield ≥ 50% (the standard "preparatively useful" cut-off used by bench chemists).
 Both share the same featurisation, the same model pool, and the same CFA machinery — the difference is the target and the metrics.
 
