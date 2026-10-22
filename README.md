@@ -19,6 +19,12 @@ The project focuses on five tasks:
 4. **Binary Success Classification** - reuse regression outputs as scores and compare them with directly trained classifiers.
 5. **Calibrated Triage** - provide success probabilities and an uncertainty-based abstention option through a Streamlit interface.
 
+Predict the outcome of Buchwald–Hartwig amination (C–N coupling) reactions from molecular fingerprints and reaction conditions, using a 41-model pool combined via k-way Combinatorial Fusion Analysis (CFA). Two task formulations live in this repo:
+
+v1 — yield regression. Predict continuous yield (0–100%).
+v2 — success classification. Predict whether yield ≥ 50% (the standard "preparatively useful" cut-off used by bench chemists).
+Both share the same featurisation, the same model pool, and the same CFA machinery — the difference is the target and the metrics.
+
 ## Data
 
 The paper describes an ORD subset selected for palladium-catalyzed reactions containing an aryl halide and amine pair, with non-null yield records.
