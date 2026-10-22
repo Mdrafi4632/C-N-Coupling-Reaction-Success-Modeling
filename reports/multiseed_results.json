@@ -1,0 +1,1227 @@
+{
+  "cells": [
+    {
+      "best_ind": "LGB_MAE",
+      "best_ind_test_acc": 0.9047619047619048,
+      "best_ind_val_perf": 0.8016522749442048,
+      "test_argmax": {
+        "combo": [
+          "LGB_MAE",
+          "ExtraTrees"
+        ],
+        "method": "ARC",
+        "val_acc": 0.9157509157509157,
+        "test_acc": 0.9133089133089133,
+        "val_mcc": 0.7901420538651419,
+        "test_mcc": 0.790579451457408
+      },
+      "prospective": {
+        "combo": [
+          "LGB_MAE",
+          "Ridge",
+          "ExtraTrees"
+        ],
+        "method": "WSCP",
+        "val_acc": 0.9181929181929182,
+        "test_acc": 0.9084249084249084,
+        "val_mcc": 0.7962477105632167,
+        "test_mcc": 0.7807658644449639
+      },
+      "per_method": {
+        "ASC": {
+          "combo": [
+            "LGB_MAE",
+            "ExtraTrees"
+          ],
+          "method": "ASC",
+          "val_acc": 0.9157509157509157,
+          "test_acc": 0.9072039072039072,
+          "val_mcc": 0.7889381941166418,
+          "test_mcc": 0.7762226126625819
+        },
+        "ARC": {
+          "combo": [
+            "LGB_MAE",
+            "ExtraTrees"
+          ],
+          "method": "ARC",
+          "val_acc": 0.9157509157509157,
+          "test_acc": 0.9133089133089133,
+          "val_mcc": 0.7901420538651419,
+          "test_mcc": 0.790579451457408
+        },
+        "WSCDS": {
+          "combo": [
+            "KernelRidge",
+            "LGB_MAE",
+            "ExtraTrees"
+          ],
+          "method": "WSCDS",
+          "val_acc": 0.9084249084249084,
+          "test_acc": 0.9108669108669109,
+          "val_mcc": 0.7701186526268408,
+          "test_mcc": 0.784880412939075
+        },
+        "WRCDS": {
+          "combo": [
+            "LGB_MAE",
+            "ExtraTrees"
+          ],
+          "method": "WRCDS",
+          "val_acc": 0.9072039072039072,
+          "test_acc": 0.9010989010989011,
+          "val_mcc": 0.7657874922375385,
+          "test_mcc": 0.7611280430120009
+        },
+        "WSCP": {
+          "combo": [
+            "KernelRidge",
+            "LGB_MAE",
+            "ExtraTrees"
+          ],
+          "method": "WSCP",
+          "val_acc": 0.9133089133089133,
+          "test_acc": 0.9096459096459096,
+          "val_mcc": 0.7840363971670671,
+          "test_mcc": 0.7823844059114466
+        },
+        "WRCP": {
+          "combo": [
+            "LGB_MAE",
+            "ExtraTrees"
+          ],
+          "method": "WRCP",
+          "val_acc": 0.9157509157509157,
+          "test_acc": 0.9133089133089133,
+          "val_mcc": 0.789797191974096,
+          "test_mcc": 0.7905500969528948
+        }
+      },
+      "finalists": [
+        "KernelRidge",
+        "LGB_MAE",
+        "TSVD_Ridge_100",
+        "Ridge",
+        "ExtraTrees"
+      ],
+      "n_finalists": 5,
+      "n_eligible": 8,
+      "split": "random",
+      "seed": 0
+    },
+    {
+      "best_ind": "LightGBM",
+      "best_ind_test_acc": 0.8876678876678876,
+      "best_ind_val_perf": 0.8050743271849404,
+      "test_argmax": {
+        "combo": [
+          "TSVD_Ridge_100",
+          "ExtraTrees"
+        ],
+        "method": "WSCP",
+        "val_acc": 0.8913308913308914,
+        "test_acc": 0.8766788766788767,
+        "val_mcc": 0.7446069612705541,
+        "test_mcc": 0.7185589116065431
+      },
+      "prospective": {
+        "combo": [
+          "TSVD_Ridge_100",
+          "ExtraTrees"
+        ],
+        "method": "WSCP",
+        "val_acc": 0.8913308913308914,
+        "test_acc": 0.8766788766788767,
+        "val_mcc": 0.7446069612705541,
+        "test_mcc": 0.7185589116065431
+      },
+      "per_method": {
+        "ASC": {
+          "combo": [
+            "TSVD_Ridge_100",
+            "ExtraTrees"
+          ],
+          "method": "ASC",
+          "val_acc": 0.8864468864468864,
+          "test_acc": 0.8705738705738706,
+          "val_mcc": 0.7324170322139565,
+          "test_mcc": 0.7040629682787338
+        },
+        "ARC": {
+          "combo": [
+            "KernelRidge",
+            "ExtraTrees"
+          ],
+          "method": "ARC",
+          "val_acc": 0.8864468864468864,
+          "test_acc": 0.8656898656898657,
+          "val_mcc": 0.7444986248016816,
+          "test_mcc": 0.6989095450592939
+        },
+        "WSCDS": {
+          "combo": [
+            "TSVD_Ridge_100",
+            "ExtraTrees"
+          ],
+          "method": "WSCDS",
+          "val_acc": 0.8864468864468864,
+          "test_acc": 0.873015873015873,
+          "val_mcc": 0.7331304391851166,
+          "test_mcc": 0.7102213820266902
+        },
+        "WRCDS": {
+          "combo": [
+            "KernelRidge",
+            "ExtraTrees"
+          ],
+          "method": "WRCDS",
+          "val_acc": 0.8864468864468864,
+          "test_acc": 0.8669108669108669,
+          "val_mcc": 0.737729801864545,
+          "test_mcc": 0.6976841145992803
+        },
+        "WSCP": {
+          "combo": [
+            "TSVD_Ridge_100",
+            "ExtraTrees"
+          ],
+          "method": "WSCP",
+          "val_acc": 0.8913308913308914,
+          "test_acc": 0.8766788766788767,
+          "val_mcc": 0.7446069612705541,
+          "test_mcc": 0.7185589116065431
+        },
+        "WRCP": {
+          "combo": [
+            "TSVD_Ridge_100",
+            "ExtraTrees"
+          ],
+          "method": "WRCP",
+          "val_acc": 0.8864468864468864,
+          "test_acc": 0.8644688644688645,
+          "val_mcc": 0.7491972418970249,
+          "test_mcc": 0.6987088218107148
+        }
+      },
+      "finalists": [
+        "TSVD_Ridge_100",
+        "KernelRidge",
+        "ExtraTrees"
+      ],
+      "n_finalists": 3,
+      "n_eligible": 8,
+      "split": "random",
+      "seed": 1
+    },
+    {
+      "best_ind": "LGB_MAE",
+      "best_ind_test_acc": 0.9120879120879121,
+      "best_ind_val_perf": 0.8375910214755824,
+      "test_argmax": {
+        "combo": [
+          "KernelRidge",
+          "ExtraTrees"
+        ],
+        "method": "ASC",
+        "val_acc": 0.905982905982906,
+        "test_acc": 0.884004884004884,
+        "val_mcc": 0.7731175400091366,
+        "test_mcc": 0.7197938783749566
+      },
+      "prospective": {
+        "combo": [
+          "TSVD_Ridge_100",
+          "ExtraTrees"
+        ],
+        "method": "WSCP",
+        "val_acc": 0.905982905982906,
+        "test_acc": 0.8827838827838828,
+        "val_mcc": 0.7755246869777297,
+        "test_mcc": 0.7213348622628263
+      },
+      "per_method": {
+        "ASC": {
+          "combo": [
+            "KernelRidge",
+            "ExtraTrees"
+          ],
+          "method": "ASC",
+          "val_acc": 0.905982905982906,
+          "test_acc": 0.884004884004884,
+          "val_mcc": 0.7731175400091366,
+          "test_mcc": 0.7197938783749566
+        },
+        "ARC": {
+          "combo": [
+            "TSVD_Ridge_100",
+            "KernelRidge",
+            "ExtraTrees"
+          ],
+          "method": "ARC",
+          "val_acc": 0.9023199023199023,
+          "test_acc": 0.8766788766788767,
+          "val_mcc": 0.7632385166868378,
+          "test_mcc": 0.7008174694148149
+        },
+        "WSCDS": {
+          "combo": [
+            "TSVD_Ridge_100",
+            "ExtraTrees"
+          ],
+          "method": "WSCDS",
+          "val_acc": 0.9035409035409036,
+          "test_acc": 0.8803418803418803,
+          "val_mcc": 0.7656826959672075,
+          "test_mcc": 0.7063610776384589
+        },
+        "WRCDS": {
+          "combo": [
+            "TSVD_Ridge_100",
+            "KernelRidge",
+            "ExtraTrees"
+          ],
+          "method": "WRCDS",
+          "val_acc": 0.9047619047619048,
+          "test_acc": 0.8754578754578755,
+          "val_mcc": 0.7691791603214664,
+          "test_mcc": 0.698165459375864
+        },
+        "WSCP": {
+          "combo": [
+            "TSVD_Ridge_100",
+            "ExtraTrees"
+          ],
+          "method": "WSCP",
+          "val_acc": 0.905982905982906,
+          "test_acc": 0.8827838827838828,
+          "val_mcc": 0.7755246869777297,
+          "test_mcc": 0.7213348622628263
+        },
+        "WRCP": {
+          "combo": [
+            "TSVD_Ridge_100",
+            "KernelRidge",
+            "ExtraTrees"
+          ],
+          "method": "WRCP",
+          "val_acc": 0.9023199023199023,
+          "test_acc": 0.8766788766788767,
+          "val_mcc": 0.7632385166868378,
+          "test_mcc": 0.7002142286579514
+        }
+      },
+      "finalists": [
+        "TSVD_Ridge_100",
+        "KernelRidge",
+        "ExtraTrees"
+      ],
+      "n_finalists": 3,
+      "n_eligible": 8,
+      "split": "random",
+      "seed": 42
+    },
+    {
+      "best_ind": "LightGBM",
+      "best_ind_test_acc": 0.8913308913308914,
+      "best_ind_val_perf": 0.7960532796846728,
+      "test_argmax": {
+        "combo": [
+          "Ridge",
+          "ExtraTrees"
+        ],
+        "method": "WSCDS",
+        "val_acc": 0.8974358974358975,
+        "test_acc": 0.8901098901098901,
+        "val_mcc": 0.7585583028376761,
+        "test_mcc": 0.7482073474094191
+      },
+      "prospective": {
+        "combo": [
+          "KernelRidge",
+          "ExtraTrees"
+        ],
+        "method": "WSCDS",
+        "val_acc": 0.8986568986568987,
+        "test_acc": 0.8827838827838828,
+        "val_mcc": 0.7601361031974628,
+        "test_mcc": 0.7308840220606695
+      },
+      "per_method": {
+        "ASC": {
+          "combo": [
+            "Ridge",
+            "ExtraTrees"
+          ],
+          "method": "ASC",
+          "val_acc": 0.8962148962148963,
+          "test_acc": 0.8827838827838828,
+          "val_mcc": 0.7569467673024293,
+          "test_mcc": 0.7322382368648188
+        },
+        "ARC": {
+          "combo": [
+            "Ridge",
+            "KernelRidge",
+            "ExtraTrees"
+          ],
+          "method": "ARC",
+          "val_acc": 0.8876678876678876,
+          "test_acc": 0.8742368742368742,
+          "val_mcc": 0.7376062690443135,
+          "test_mcc": 0.7121393599165705
+        },
+        "WSCDS": {
+          "combo": [
+            "Ridge",
+            "ExtraTrees"
+          ],
+          "method": "WSCDS",
+          "val_acc": 0.8974358974358975,
+          "test_acc": 0.8901098901098901,
+          "val_mcc": 0.7585583028376761,
+          "test_mcc": 0.7482073474094191
+        },
+        "WRCDS": {
+          "combo": [
+            "KernelRidge",
+            "ExtraTrees"
+          ],
+          "method": "WRCDS",
+          "val_acc": 0.8901098901098901,
+          "test_acc": 0.8742368742368742,
+          "val_mcc": 0.7389321716984941,
+          "test_mcc": 0.7116861469939199
+        },
+        "WSCP": {
+          "combo": [
+            "Ridge",
+            "ExtraTrees"
+          ],
+          "method": "WSCP",
+          "val_acc": 0.8974358974358975,
+          "test_acc": 0.8888888888888888,
+          "val_mcc": 0.7577256760424488,
+          "test_mcc": 0.7449371794072138
+        },
+        "WRCP": {
+          "combo": [
+            "Ridge",
+            "KernelRidge",
+            "ExtraTrees"
+          ],
+          "method": "WRCP",
+          "val_acc": 0.8864468864468864,
+          "test_acc": 0.8791208791208791,
+          "val_mcc": 0.7350011937797509,
+          "test_mcc": 0.723386050669799
+        }
+      },
+      "finalists": [
+        "Ridge",
+        "TSVD_Ridge_100",
+        "KernelRidge",
+        "ExtraTrees"
+      ],
+      "n_finalists": 4,
+      "n_eligible": 8,
+      "split": "random",
+      "seed": 101
+    },
+    {
+      "best_ind": "LGB_MAE",
+      "best_ind_test_acc": 0.8681318681318682,
+      "best_ind_val_perf": 0.7946795353721787,
+      "test_argmax": {
+        "combo": [
+          "LGB_MAE",
+          "LightGBM",
+          "HistGBT"
+        ],
+        "method": "ASC",
+        "val_acc": 0.9157509157509157,
+        "test_acc": 0.9047619047619048,
+        "val_mcc": 0.7967263829427016,
+        "test_mcc": 0.7887322297576793
+      },
+      "prospective": {
+        "combo": [
+          "LGB_MAE",
+          "LightGBM",
+          "HistGBT"
+        ],
+        "method": "WSCDS",
+        "val_acc": 0.9169719169719169,
+        "test_acc": 0.9047619047619048,
+        "val_mcc": 0.799856723840028,
+        "test_mcc": 0.7887322297576793
+      },
+      "per_method": {
+        "ASC": {
+          "combo": [
+            "LGB_MAE",
+            "LightGBM",
+            "HistGBT"
+          ],
+          "method": "ASC",
+          "val_acc": 0.9157509157509157,
+          "test_acc": 0.9047619047619048,
+          "val_mcc": 0.7967263829427016,
+          "test_mcc": 0.7887322297576793
+        },
+        "ARC": {
+          "combo": [
+            "LGB_MAE",
+            "LightGBM"
+          ],
+          "method": "ARC",
+          "val_acc": 0.9145299145299145,
+          "test_acc": 0.8937728937728938,
+          "val_mcc": 0.7961821986070271,
+          "test_mcc": 0.7612291249212212
+        },
+        "WSCDS": {
+          "combo": [
+            "LGB_MAE",
+            "LightGBM",
+            "HistGBT"
+          ],
+          "method": "WSCDS",
+          "val_acc": 0.9169719169719169,
+          "test_acc": 0.9047619047619048,
+          "val_mcc": 0.799856723840028,
+          "test_mcc": 0.7887322297576793
+        },
+        "WRCDS": {
+          "combo": [
+            "LGB_MAE",
+            "LightGBM"
+          ],
+          "method": "WRCDS",
+          "val_acc": 0.9145299145299145,
+          "test_acc": 0.8901098901098901,
+          "val_mcc": 0.7961821986070271,
+          "test_mcc": 0.7528365187431176
+        },
+        "WSCP": {
+          "combo": [
+            "LGB_MAE",
+            "LightGBM",
+            "HistGBT"
+          ],
+          "method": "WSCP",
+          "val_acc": 0.9157509157509157,
+          "test_acc": 0.9047619047619048,
+          "val_mcc": 0.7967263829427016,
+          "test_mcc": 0.7887322297576793
+        },
+        "WRCP": {
+          "combo": [
+            "LGB_MAE",
+            "LightGBM"
+          ],
+          "method": "WRCP",
+          "val_acc": 0.9145299145299145,
+          "test_acc": 0.8913308913308914,
+          "val_mcc": 0.7961821986070271,
+          "test_mcc": 0.7556324979671005
+        }
+      },
+      "finalists": [
+        "LGB_MAE",
+        "LightGBM",
+        "XGBoost",
+        "HistGBT",
+        "ExtraTrees"
+      ],
+      "n_finalists": 5,
+      "n_eligible": 8,
+      "split": "random",
+      "seed": 256
+    },
+    {
+      "best_ind": "LightGBM",
+      "best_ind_test_acc": 0.5606299212598426,
+      "best_ind_val_perf": 0.816496580927726,
+      "test_argmax": {
+        "combo": [
+          "LightGBM",
+          "HistGBT",
+          "ExtraTrees"
+        ],
+        "method": "ARC",
+        "val_acc": 0.9,
+        "test_acc": 0.6110236220472441,
+        "val_mcc": 0.816496580927726,
+        "test_mcc": 0.2147468603963932
+      },
+      "prospective": {
+        "combo": [
+          "XGBoost",
+          "LightGBM"
+        ],
+        "method": "ASC",
+        "val_acc": 0.9,
+        "test_acc": 0.552755905511811,
+        "val_mcc": 0.816496580927726,
+        "test_mcc": 0.09082045646034688
+      },
+      "per_method": {
+        "ASC": {
+          "combo": [
+            "HistGBT",
+            "ExtraTrees"
+          ],
+          "method": "ASC",
+          "val_acc": 0.9,
+          "test_acc": 0.5921259842519685,
+          "val_mcc": 0.816496580927726,
+          "test_mcc": 0.1754199524218723
+        },
+        "ARC": {
+          "combo": [
+            "LightGBM",
+            "HistGBT",
+            "ExtraTrees"
+          ],
+          "method": "ARC",
+          "val_acc": 0.9,
+          "test_acc": 0.6110236220472441,
+          "val_mcc": 0.816496580927726,
+          "test_mcc": 0.2147468603963932
+        },
+        "WSCDS": {
+          "combo": [
+            "HistGBT",
+            "ExtraTrees"
+          ],
+          "method": "WSCDS",
+          "val_acc": 0.9,
+          "test_acc": 0.5905511811023622,
+          "val_mcc": 0.816496580927726,
+          "test_mcc": 0.17199060480080067
+        },
+        "WRCDS": {
+          "combo": [
+            "LightGBM",
+            "HistGBT",
+            "ExtraTrees"
+          ],
+          "method": "WRCDS",
+          "val_acc": 0.9,
+          "test_acc": 0.6078740157480315,
+          "val_mcc": 0.816496580927726,
+          "test_mcc": 0.208260737091993
+        },
+        "WSCP": {
+          "combo": [
+            "HistGBT",
+            "ExtraTrees"
+          ],
+          "method": "WSCP",
+          "val_acc": 0.9,
+          "test_acc": 0.5921259842519685,
+          "val_mcc": 0.816496580927726,
+          "test_mcc": 0.1754199524218723
+        },
+        "WRCP": {
+          "combo": [
+            "LightGBM",
+            "HistGBT",
+            "ExtraTrees"
+          ],
+          "method": "WRCP",
+          "val_acc": 0.9,
+          "test_acc": 0.6110236220472441,
+          "val_mcc": 0.816496580927726,
+          "test_mcc": 0.2147468603963932
+        }
+      },
+      "finalists": [
+        "XGBoost",
+        "LightGBM",
+        "Ridge",
+        "HistGBT",
+        "ExtraTrees"
+      ],
+      "n_finalists": 5,
+      "n_eligible": 8,
+      "split": "scaffold",
+      "seed": 0
+    },
+    {
+      "best_ind": "LightGBM",
+      "best_ind_test_acc": 0.5637795275590551,
+      "best_ind_val_perf": 0.816496580927726,
+      "test_argmax": {
+        "combo": [
+          "LightGBM",
+          "HistGBT",
+          "ExtraTrees"
+        ],
+        "method": "WRCDS",
+        "val_acc": 0.9,
+        "test_acc": 0.6110236220472441,
+        "val_mcc": 0.816496580927726,
+        "test_mcc": 0.21463453705082305
+      },
+      "prospective": {
+        "combo": [
+          "XGBoost",
+          "LightGBM"
+        ],
+        "method": "ASC",
+        "val_acc": 0.9,
+        "test_acc": 0.552755905511811,
+        "val_mcc": 0.816496580927726,
+        "test_mcc": 0.09031163770284303
+      },
+      "per_method": {
+        "ASC": {
+          "combo": [
+            "LightGBM",
+            "ExtraTrees"
+          ],
+          "method": "ASC",
+          "val_acc": 0.9,
+          "test_acc": 0.5968503937007874,
+          "val_mcc": 0.816496580927726,
+          "test_mcc": 0.18711216361842747
+        },
+        "ARC": {
+          "combo": [
+            "LightGBM",
+            "HistGBT",
+            "ExtraTrees"
+          ],
+          "method": "ARC",
+          "val_acc": 0.9,
+          "test_acc": 0.6062992125984252,
+          "val_mcc": 0.816496580927726,
+          "test_mcc": 0.20485556677017244
+        },
+        "WSCDS": {
+          "combo": [
+            "LightGBM",
+            "ExtraTrees"
+          ],
+          "method": "WSCDS",
+          "val_acc": 0.9,
+          "test_acc": 0.5952755905511811,
+          "val_mcc": 0.816496580927726,
+          "test_mcc": 0.1833272796371042
+        },
+        "WRCDS": {
+          "combo": [
+            "LightGBM",
+            "HistGBT",
+            "ExtraTrees"
+          ],
+          "method": "WRCDS",
+          "val_acc": 0.9,
+          "test_acc": 0.6110236220472441,
+          "val_mcc": 0.816496580927726,
+          "test_mcc": 0.21463453705082305
+        },
+        "WSCP": {
+          "combo": [
+            "LightGBM",
+            "ExtraTrees"
+          ],
+          "method": "WSCP",
+          "val_acc": 0.9,
+          "test_acc": 0.5968503937007874,
+          "val_mcc": 0.816496580927726,
+          "test_mcc": 0.18711216361842747
+        },
+        "WRCP": {
+          "combo": [
+            "LightGBM",
+            "HistGBT",
+            "ExtraTrees"
+          ],
+          "method": "WRCP",
+          "val_acc": 0.9,
+          "test_acc": 0.6062992125984252,
+          "val_mcc": 0.816496580927726,
+          "test_mcc": 0.20485556677017244
+        }
+      },
+      "finalists": [
+        "XGBoost",
+        "LightGBM",
+        "HistGBT",
+        "ExtraTrees",
+        "KernelRidge"
+      ],
+      "n_finalists": 5,
+      "n_eligible": 8,
+      "split": "scaffold",
+      "seed": 1
+    },
+    {
+      "best_ind": "LightGBM",
+      "best_ind_test_acc": 0.5590551181102362,
+      "best_ind_val_perf": 0.816496580927726,
+      "test_argmax": {
+        "combo": [
+          "LightGBM",
+          "HistGBT"
+        ],
+        "method": "ARC",
+        "val_acc": 0.9,
+        "test_acc": 0.6062992125984252,
+        "val_mcc": 0.816496580927726,
+        "test_mcc": 0.20572829859700179
+      },
+      "prospective": {
+        "combo": [
+          "XGBoost",
+          "LightGBM"
+        ],
+        "method": "ASC",
+        "val_acc": 0.9,
+        "test_acc": 0.5574803149606299,
+        "val_mcc": 0.816496580927726,
+        "test_mcc": 0.10174673348446142
+      },
+      "per_method": {
+        "ASC": {
+          "combo": [
+            "HistGBT",
+            "ExtraTrees"
+          ],
+          "method": "ASC",
+          "val_acc": 0.9,
+          "test_acc": 0.5889763779527559,
+          "val_mcc": 0.816496580927726,
+          "test_mcc": 0.16852673508404373
+        },
+        "ARC": {
+          "combo": [
+            "LightGBM",
+            "HistGBT"
+          ],
+          "method": "ARC",
+          "val_acc": 0.9,
+          "test_acc": 0.6062992125984252,
+          "val_mcc": 0.816496580927726,
+          "test_mcc": 0.20572829859700179
+        },
+        "WSCDS": {
+          "combo": [
+            "HistGBT",
+            "ExtraTrees"
+          ],
+          "method": "WSCDS",
+          "val_acc": 0.9,
+          "test_acc": 0.5937007874015748,
+          "val_mcc": 0.816496580927726,
+          "test_mcc": 0.17862873482786207
+        },
+        "WRCDS": {
+          "combo": [
+            "LightGBM",
+            "HistGBT"
+          ],
+          "method": "WRCDS",
+          "val_acc": 0.9,
+          "test_acc": 0.6015748031496063,
+          "val_mcc": 0.816496580927726,
+          "test_mcc": 0.19616876329656588
+        },
+        "WSCP": {
+          "combo": [
+            "XGBoost",
+            "LightGBM",
+            "HistGBT",
+            "ExtraTrees",
+            "KernelRidge"
+          ],
+          "method": "WSCP",
+          "val_acc": 0.9,
+          "test_acc": 0.5952755905511811,
+          "val_mcc": 0.816496580927726,
+          "test_mcc": 0.1817466562035311
+        },
+        "WRCP": {
+          "combo": [
+            "LightGBM",
+            "HistGBT"
+          ],
+          "method": "WRCP",
+          "val_acc": 0.9,
+          "test_acc": 0.6062992125984252,
+          "val_mcc": 0.816496580927726,
+          "test_mcc": 0.20572829859700179
+        }
+      },
+      "finalists": [
+        "XGBoost",
+        "LightGBM",
+        "HistGBT",
+        "ExtraTrees",
+        "KernelRidge"
+      ],
+      "n_finalists": 5,
+      "n_eligible": 8,
+      "split": "scaffold",
+      "seed": 42
+    },
+    {
+      "best_ind": "LightGBM",
+      "best_ind_test_acc": 0.5669291338582677,
+      "best_ind_val_perf": 0.816496580927726,
+      "test_argmax": {
+        "combo": [
+          "LightGBM",
+          "TSVD_Ridge_100",
+          "HistGBT"
+        ],
+        "method": "WRCP",
+        "val_acc": 0.9,
+        "test_acc": 0.6299212598425197,
+        "val_mcc": 0.816496580927726,
+        "test_mcc": 0.2569220808532496
+      },
+      "prospective": {
+        "combo": [
+          "KernelRidge",
+          "LightGBM"
+        ],
+        "method": "ASC",
+        "val_acc": 0.9,
+        "test_acc": 0.5511811023622047,
+        "val_mcc": 0.816496580927726,
+        "test_mcc": 0.10611761426978818
+      },
+      "per_method": {
+        "ASC": {
+          "combo": [
+            "LightGBM",
+            "LGB_MAE"
+          ],
+          "method": "ASC",
+          "val_acc": 0.9,
+          "test_acc": 0.6188976377952756,
+          "val_mcc": 0.816496580927726,
+          "test_mcc": 0.2310066447925799
+        },
+        "ARC": {
+          "combo": [
+            "LightGBM",
+            "LGB_MAE",
+            "HistGBT"
+          ],
+          "method": "ARC",
+          "val_acc": 0.9,
+          "test_acc": 0.6251968503937008,
+          "val_mcc": 0.816496580927726,
+          "test_mcc": 0.24573919071341987
+        },
+        "WSCDS": {
+          "combo": [
+            "LightGBM",
+            "LGB_MAE"
+          ],
+          "method": "WSCDS",
+          "val_acc": 0.9,
+          "test_acc": 0.6236220472440945,
+          "val_mcc": 0.816496580927726,
+          "test_mcc": 0.24085781847183302
+        },
+        "WRCDS": {
+          "combo": [
+            "LightGBM",
+            "LGB_MAE"
+          ],
+          "method": "WRCDS",
+          "val_acc": 0.9,
+          "test_acc": 0.6220472440944882,
+          "val_mcc": 0.816496580927726,
+          "test_mcc": 0.24024051107901687
+        },
+        "WSCP": {
+          "combo": [
+            "LGB_MAE",
+            "TSVD_Ridge_100",
+            "HistGBT"
+          ],
+          "method": "WSCP",
+          "val_acc": 0.9,
+          "test_acc": 0.6236220472440945,
+          "val_mcc": 0.816496580927726,
+          "test_mcc": 0.24376461784762138
+        },
+        "WRCP": {
+          "combo": [
+            "LightGBM",
+            "TSVD_Ridge_100",
+            "HistGBT"
+          ],
+          "method": "WRCP",
+          "val_acc": 0.9,
+          "test_acc": 0.6299212598425197,
+          "val_mcc": 0.816496580927726,
+          "test_mcc": 0.2569220808532496
+        }
+      },
+      "finalists": [
+        "KernelRidge",
+        "LightGBM",
+        "LGB_MAE",
+        "TSVD_Ridge_100",
+        "HistGBT"
+      ],
+      "n_finalists": 5,
+      "n_eligible": 8,
+      "split": "scaffold",
+      "seed": 101
+    },
+    {
+      "best_ind": "LightGBM",
+      "best_ind_test_acc": 0.573228346456693,
+      "best_ind_val_perf": 0.816496580927726,
+      "test_argmax": {
+        "combo": [
+          "LightGBM",
+          "LGB_MAE"
+        ],
+        "method": "ARC",
+        "val_acc": 0.9,
+        "test_acc": 0.6267716535433071,
+        "val_mcc": 0.816496580927726,
+        "test_mcc": 0.24985839785498834
+      },
+      "prospective": {
+        "combo": [
+          "XGBoost",
+          "LightGBM"
+        ],
+        "method": "ASC",
+        "val_acc": 0.9,
+        "test_acc": 0.552755905511811,
+        "val_mcc": 0.816496580927726,
+        "test_mcc": 0.08967284838635134
+      },
+      "per_method": {
+        "ASC": {
+          "combo": [
+            "HistGBT",
+            "LGB_MAE"
+          ],
+          "method": "ASC",
+          "val_acc": 0.9,
+          "test_acc": 0.6236220472440945,
+          "val_mcc": 0.816496580927726,
+          "test_mcc": 0.24151845421514123
+        },
+        "ARC": {
+          "combo": [
+            "LightGBM",
+            "LGB_MAE"
+          ],
+          "method": "ARC",
+          "val_acc": 0.9,
+          "test_acc": 0.6267716535433071,
+          "val_mcc": 0.816496580927726,
+          "test_mcc": 0.24985839785498834
+        },
+        "WSCDS": {
+          "combo": [
+            "HistGBT",
+            "LGB_MAE"
+          ],
+          "method": "WSCDS",
+          "val_acc": 0.9,
+          "test_acc": 0.6220472440944882,
+          "val_mcc": 0.816496580927726,
+          "test_mcc": 0.23825947433455433
+        },
+        "WRCDS": {
+          "combo": [
+            "LightGBM",
+            "LGB_MAE"
+          ],
+          "method": "WRCDS",
+          "val_acc": 0.9,
+          "test_acc": 0.6267716535433071,
+          "val_mcc": 0.816496580927726,
+          "test_mcc": 0.24985839785498834
+        },
+        "WSCP": {
+          "combo": [
+            "HistGBT",
+            "LGB_MAE"
+          ],
+          "method": "WSCP",
+          "val_acc": 0.9,
+          "test_acc": 0.6188976377952756,
+          "val_mcc": 0.816496580927726,
+          "test_mcc": 0.23173882689692535
+        },
+        "WRCP": {
+          "combo": [
+            "LightGBM",
+            "LGB_MAE"
+          ],
+          "method": "WRCP",
+          "val_acc": 0.9,
+          "test_acc": 0.6251968503937008,
+          "val_mcc": 0.816496580927726,
+          "test_mcc": 0.24657602021706976
+        }
+      },
+      "finalists": [
+        "XGBoost",
+        "LightGBM",
+        "HistGBT",
+        "ExtraTrees",
+        "LGB_MAE"
+      ],
+      "n_finalists": 5,
+      "n_eligible": 8,
+      "split": "scaffold",
+      "seed": 256
+    }
+  ],
+  "seeds": [
+    0,
+    1,
+    42,
+    101,
+    256
+  ],
+  "splits": [
+    "random",
+    "scaffold"
+  ],
+  "wilcoxon": [
+    {
+      "split": "random",
+      "n_cells": 5,
+      "mean_best_ind": 0.8927960927960928,
+      "mean_test_argmax": 0.8937728937728938,
+      "mean_prospective": 0.8910866910866911,
+      "lift_test_argmax_pp": 0.09768009768009513,
+      "lift_prospective_pp": -0.17094017094017255,
+      "p_test_argmax_wilcoxon": 0.59375,
+      "p_prospective_wilcoxon": 0.6875
+    },
+    {
+      "split": "scaffold",
+      "n_cells": 5,
+      "mean_best_ind": 0.5647244094488189,
+      "mean_test_argmax": 0.6170078740157481,
+      "mean_prospective": 0.5533858267716536,
+      "lift_test_argmax_pp": 5.228346456692914,
+      "lift_prospective_pp": -1.133858267716541,
+      "p_test_argmax_wilcoxon": 0.03125,
+      "p_prospective_wilcoxon": 1.0
+    }
+  ],
+  "per_method": [
+    {
+      "split": "random",
+      "method": "ASC",
+      "mean_test_acc": 0.8898656898656899,
+      "std_test_acc": 0.013994186844341299,
+      "n_cells": 5
+    },
+    {
+      "split": "random",
+      "method": "ARC",
+      "mean_test_acc": 0.8847374847374848,
+      "std_test_acc": 0.016946863563269802,
+      "n_cells": 5
+    },
+    {
+      "split": "random",
+      "method": "WSCDS",
+      "mean_test_acc": 0.8918192918192919,
+      "std_test_acc": 0.014272663439514,
+      "n_cells": 5
+    },
+    {
+      "split": "random",
+      "method": "WRCDS",
+      "mean_test_acc": 0.8815628815628817,
+      "std_test_acc": 0.012331507861247948,
+      "n_cells": 5
+    },
+    {
+      "split": "random",
+      "method": "WSCP",
+      "mean_test_acc": 0.8925518925518926,
+      "std_test_acc": 0.012665496927853428,
+      "n_cells": 5
+    },
+    {
+      "split": "random",
+      "method": "WRCP",
+      "mean_test_acc": 0.8849816849816851,
+      "std_test_acc": 0.016533637001036137,
+      "n_cells": 5
+    },
+    {
+      "split": "scaffold",
+      "method": "ASC",
+      "mean_test_acc": 0.6040944881889765,
+      "std_test_acc": 0.014315991404552473,
+      "n_cells": 5
+    },
+    {
+      "split": "scaffold",
+      "method": "ARC",
+      "mean_test_acc": 0.6151181102362205,
+      "std_test_acc": 0.009052036449259771,
+      "n_cells": 5
+    },
+    {
+      "split": "scaffold",
+      "method": "WSCDS",
+      "mean_test_acc": 0.6050393700787401,
+      "std_test_acc": 0.014617702533382439,
+      "n_cells": 5
+    },
+    {
+      "split": "scaffold",
+      "method": "WRCDS",
+      "mean_test_acc": 0.6138582677165354,
+      "std_test_acc": 0.009257913988471858,
+      "n_cells": 5
+    },
+    {
+      "split": "scaffold",
+      "method": "WSCP",
+      "mean_test_acc": 0.6053543307086615,
+      "std_test_acc": 0.01316068183670943,
+      "n_cells": 5
+    },
+    {
+      "split": "scaffold",
+      "method": "WRCP",
+      "mean_test_acc": 0.6157480314960629,
+      "std_test_acc": 0.009910004864599833,
+      "n_cells": 5
+    }
+  ],
+  "selection_freq": {
+    "KernelRidge": 7,
+    "LGB_MAE": 4,
+    "TSVD_Ridge_100": 5,
+    "Ridge": 3,
+    "ExtraTrees": 9,
+    "LightGBM": 6,
+    "XGBoost": 5,
+    "HistGBT": 6
+  },
+  "best_membership": {
+    "LGB_MAE": 3,
+    "ExtraTrees": 6,
+    "TSVD_Ridge_100": 2,
+    "KernelRidge": 1,
+    "Ridge": 1,
+    "LightGBM": 6,
+    "HistGBT": 5
+  }
+}

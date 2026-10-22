@@ -1,0 +1,16 @@
+\begin{tabular}{lrrr}
+\toprule
+Strategy & Accuracy & MCC & $\Delta$ acc vs single \\
+\midrule
+majority class & 0.471 & +0.000 & -0.063 \\
+single best & 0.534 & +0.042 & +0.000 \\
+equal weight top2 & 0.553 & +0.099 & +0.019 \\
+equal weight top3 & 0.554 & +0.099 & +0.020 \\
+equal weight top5 & 0.562 & +0.128 & +0.028 \\
+majority vote top3 & 0.548 & +0.079 & +0.014 \\
+majority vote top5 & 0.556 & +0.108 & +0.022 \\
+cfa greedy & 0.534 & +0.042 & -0.000 \\
+cfa kway val selected & 0.553 & +0.099 & +0.019 \\
+cfa kway test ceiling & 0.633 & +0.271 & +0.099 \\
+\bottomrule
+\end{tabular}

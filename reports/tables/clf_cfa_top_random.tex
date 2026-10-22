@@ -1,0 +1,11 @@
+\begin{tabular}{p{8cm}cclrr}
+\toprule
+Models & $k$ & Method & Acc & F1 & MCC \\
+\midrule
+LightGBM & 1 & N/A & 0.9232 & 0.9121 & +0.8250 \\
+Chemprop + XGBoost & 2 & ARC & 0.9098 & 0.8971 & +0.7946 \\
+Chemprop + skMLP\_Tanh + XGBoost & 3 & ARC & 0.9183 & 0.9060 & +0.8135 \\
+Chemprop + LightGBM + skMLP\_Tanh + XGBoost & 4 & ARC & 0.9183 & 0.9054 & +0.8133 \\
+Chemprop + LightGBM + skMLP\_Tanh + KernelRidge + XGBoost & 5 & WSCDS & 0.9244 & 0.9123 & +0.8275 \\
+\bottomrule
+\end{tabular}

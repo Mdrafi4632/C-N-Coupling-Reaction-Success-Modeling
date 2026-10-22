@@ -1,0 +1,71 @@
+\relax 
+\providecommand\hyper@newdestlabel[2]{}
+\providecommand\HyperFirstAtBeginDocument{\AtBeginDocument}
+\HyperFirstAtBeginDocument{\ifx\hyper@anchor\@undefined
+\global\let\oldnewlabel\newlabel
+\gdef\newlabel#1#2{\newlabelxx{#1}#2}
+\gdef\newlabelxx#1#2#3#4#5#6{\oldnewlabel{#1}{{#2}{#3}}}
+\AtEndDocument{\ifx\hyper@anchor\@undefined
+\let\newlabel\oldnewlabel
+\fi}
+\fi}
+\global\let\hyper@last\relax 
+\gdef\HyperFirstAtBeginDocument#1{#1}
+\providecommand\HyField@AuxAddToFields[1]{}
+\providecommand\HyField@AuxAddToCoFields[2]{}
+\@writefile{toc}{\contentsline {section}{\numberline {1}Glossary of key concepts}{1}{section.1}\protected@file@percent }
+\newlabel{sec:glossary}{{1}{1}{Glossary of key concepts}{section.1}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {2}Why we pivoted}{3}{section.2}\protected@file@percent }
+\newlabel{sec:pivot}{{2}{3}{Why we pivoted}{section.2}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3}Task and data}{3}{section.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Task.}{3}{section*.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Dataset.}{3}{section*.4}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Class balance after binarisation at the 50\% yield threshold.\relax }}{4}{table.caption.5}\protected@file@percent }
+\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
+\newlabel{tab:classbal}{{1}{4}{Class balance after binarisation at the 50\% yield threshold.\relax }{table.caption.5}{}}
+\@writefile{toc}{\contentsline {paragraph}{Featurisation.}{4}{section*.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Splits.}{4}{section*.7}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Yield distribution (left) and reaction-temperature distribution (right) for the 5{,}465 C--N coupling reactions extracted from ORD. The vertical line at 50\% (left panel) is the binary success cut-off: reactions to its right are class 1, to its left class 0.\relax }}{4}{figure.caption.8}\protected@file@percent }
+\newlabel{fig:dataset}{{1}{4}{Yield distribution (left) and reaction-temperature distribution (right) for the 5{,}465 C--N coupling reactions extracted from ORD. The vertical line at 50\% (left panel) is the binary success cut-off: reactions to its right are class 1, to its left class 0.\relax }{figure.caption.8}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4}Method}{4}{section.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Model pool}{4}{subsection.4.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Combinatorial Fusion Analysis (classification form)}{5}{subsection.4.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {5}Results}{6}{section.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Per-model classification on the random split}{6}{subsection.5.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Per-model classification metrics on the random 70/15/15 test set after binarising at yield $\geq 50\%$. Accuracy and MCC are shown side-by-side; models are sorted by accuracy. The best individual classifiers are \texttt  {LightGBM} (acc 0.921, MCC $+0.82$, AUC 0.97) and Chemprop (acc 0.918, MCC $+0.82$, AUC 0.97). The dotted line marks the no-information baseline (always predict the majority class), accuracy 68.1\%.\relax }}{6}{figure.caption.9}\protected@file@percent }
+\newlabel{fig:clf-per-model-random}{{2}{6}{Per-model classification metrics on the random 70/15/15 test set after binarising at yield $\geq 50\%$. Accuracy and MCC are shown side-by-side; models are sorted by accuracy. The best individual classifiers are \texttt {LightGBM} (acc 0.921, MCC $+0.82$, AUC 0.97) and Chemprop (acc 0.918, MCC $+0.82$, AUC 0.97). The dotted line marks the no-information baseline (always predict the majority class), accuracy 68.1\%.\relax }{figure.caption.9}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Top-10 individual classifiers on the random split.\relax }}{7}{table.caption.10}\protected@file@percent }
+\newlabel{tab:clf-top-random}{{2}{7}{Top-10 individual classifiers on the random split.\relax }{table.caption.10}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}CFA on the random split}{7}{subsection.5.2}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces Best $k$-way CFA ensembles on the random split (validation-selected per $k$). All metrics are test-set values.\relax }}{7}{table.caption.11}\protected@file@percent }
+\newlabel{tab:clf-cfa-random}{{3}{7}{Best $k$-way CFA ensembles on the random split (validation-selected per $k$). All metrics are test-set values.\relax }{table.caption.11}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Top-10 CFA ensembles per $k$ on the random split, sorted by test accuracy. The red dotted line marks the best observed test accuracy across all $k$ and methods.\relax }}{8}{figure.caption.12}\protected@file@percent }
+\newlabel{fig:clf-kway-random}{{3}{8}{Top-10 CFA ensembles per $k$ on the random split, sorted by test accuracy. The red dotted line marks the best observed test accuracy across all $k$ and methods.\relax }{figure.caption.12}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3}Scaffold-OOD performance}{9}{subsection.5.3}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Per-model classification metrics on the scaffold-OOD test set. The 50\% binarisation absorbs much of the scale collapse that crippled the v1 regressors: even with negative R$^2$ on this split, accuracy and MCC remain meaningful. The no-information baseline (majority class on the test set) is shown as a dotted line.\relax }}{9}{figure.caption.13}\protected@file@percent }
+\newlabel{fig:clf-per-model-scaffold}{{4}{9}{Per-model classification metrics on the scaffold-OOD test set. The 50\% binarisation absorbs much of the scale collapse that crippled the v1 regressors: even with negative R$^2$ on this split, accuracy and MCC remain meaningful. The no-information baseline (majority class on the test set) is shown as a dotted line.\relax }{figure.caption.13}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces Top-10 individual classifiers on the scaffold-OOD split.\relax }}{10}{table.caption.14}\protected@file@percent }
+\newlabel{tab:clf-top-scaffold}{{4}{10}{Top-10 individual classifiers on the scaffold-OOD split.\relax }{table.caption.14}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {5}{\ignorespaces Best $k$-way CFA ensembles on the scaffold-OOD split.\relax }}{10}{table.caption.15}\protected@file@percent }
+\newlabel{tab:clf-cfa-scaffold}{{5}{10}{Best $k$-way CFA ensembles on the scaffold-OOD split.\relax }{table.caption.15}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.4}Random vs scaffold-OOD comparison}{10}{subsection.5.4}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces \textbf  {Random vs scaffold-OOD test accuracy} for the top classifiers. Unlike the v1 regressors (which collapsed below R$^2 = 0$ on scaffold-OOD), the binary classifier retains meaningful accuracy on unseen scaffolds: $0.59$ for the best model vs.\ a majority-class baseline of $0.53$, and AUC $\approx 0.64$ indicating real (if weak) ranking ability.\relax }}{10}{figure.caption.16}\protected@file@percent }
+\newlabel{fig:clf-split-compare}{{5}{10}{\textbf {Random vs scaffold-OOD test accuracy} for the top classifiers. Unlike the v1 regressors (which collapsed below R$^2 = 0$ on scaffold-OOD), the binary classifier retains meaningful accuracy on unseen scaffolds: $0.59$ for the best model vs.\ a majority-class baseline of $0.53$, and AUC $\approx 0.64$ indicating real (if weak) ranking ability.\relax }{figure.caption.16}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.5}Headline numbers}{11}{subsection.5.5}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {6}{\ignorespaces Headline numbers across both splits. The val=10 sample-size limitation of the scaffold split is unchanged from v1; the val-selected ensemble is therefore noisier than the test ceiling and should be read as a lower bound on deployable performance.\relax }}{11}{table.caption.17}\protected@file@percent }
+\newlabel{tab:headline}{{6}{11}{Headline numbers across both splits. The val=10 sample-size limitation of the scaffold split is unchanged from v1; the val-selected ensemble is therefore noisier than the test ceiling and should be read as a lower bound on deployable performance.\relax }{table.caption.17}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {6}Methodology — model architectures}{11}{section.6}\protected@file@percent }
+\newlabel{sec:methodology}{{6}{11}{Methodology — model architectures}{section.6}{}}
+\@writefile{toc}{\contentsline {paragraph}{LightGBM.}{11}{section*.18}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Chemprop (D-MPNN).}{11}{section*.19}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{NGBoost.}{11}{section*.20}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{rxnfp + LightGBM.}{11}{section*.21}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Gaussian Process with Tanimoto kernel.}{11}{section*.22}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Combinatorial Fusion Analysis.}{12}{section*.23}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {7}Discussion}{12}{section.7}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Why classification works where regression failed.}{12}{section*.24}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Deployment fit.}{12}{section*.25}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Limitations.}{12}{section*.26}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {8}Future work}{12}{section.8}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {9}Reproducing this report}{12}{section.9}\protected@file@percent }
+\gdef \@abspage@last{13}

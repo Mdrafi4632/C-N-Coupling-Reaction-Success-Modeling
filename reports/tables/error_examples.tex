@@ -1,0 +1,15 @@
+\begin{tabular}{p{3.0cm}p{3.2cm}rrr}
+\toprule
+Aryl halide & Amine & yield & $\hat y$ & $p$(success) \\
+\midrule
+\multicolumn{5}{l}{\emph{False positives (top-3 most confident)}} \\
+\texttt{Brc1cnc2ccccc2c1} & \texttt{Cc1noc(C)c1B2OC(C)(C)C...} & 10.3 & 70.6 & 0.97 \\
+\texttt{CN1C[C@H](OC2=C(C1)C=C...} & \texttt{CN1C=C(C=N1)C2=C(N=C(C...} & 0.0 & 74.7 & 0.97 \\
+\texttt{Brc1cccnc1} & \texttt{Cc1ccc(N)cc1} & 47.7 & 61.3 & 0.91 \\
+\midrule
+\multicolumn{5}{l}{\emph{False negatives (top-3 most confident wrong)}} \\
+\texttt{C1=CC=C(C(=C1)Cl)Br} & \texttt{C1CNCCN1} & 58.4 & 18.2 & 0.01 \\
+\texttt{COC(=O)C1=CC(=CC(=C1)B...} & \texttt{C1COCCN1} & 78.2 & 8.3 & 0.01 \\
+\texttt{CCOC(=O)C1=C(C2=CC(=C(...} & \texttt{C1COCCN1} & 74.7 & 27.3 & 0.04 \\
+\bottomrule
+\end{tabular}
