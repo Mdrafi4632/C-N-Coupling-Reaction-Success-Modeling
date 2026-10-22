@@ -1,0 +1,8 @@
+{
+  "feature_dim": 14337,
+  "morgan_radius": 2,
+  "morgan_nbits": 2048,
+  "drfp_nbits": 2048,
+  "success_threshold": 50.0,
+  "n_train": 3825
+}

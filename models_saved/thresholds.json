@@ -1,0 +1,10 @@
+{
+  "LightGBM": {
+    "threshold": 49.995079040527344,
+    "val_accuracy": 0.9182926829268293
+  },
+  "Chemprop": {
+    "threshold": 49.460941314697266,
+    "val_accuracy": 0.9219512195121952
+  }
+}

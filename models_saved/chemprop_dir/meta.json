@@ -1,0 +1,8 @@
+{
+  "d_h": 300,
+  "depth": 3,
+  "ffn_hidden": 300,
+  "ffn_layers": 2,
+  "extra_dim": 10241,
+  "batch_norm": true
+}
