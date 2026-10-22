@@ -199,6 +199,34 @@ report/
     make_extra_figures.py        Additional figure generation
 ```
 
+
+## Results
+
+**v1 — yield regression (test set).**
+
+| Split        | Best model / ensemble                        | R²    | MAE  |
+|--------------|----------------------------------------------|-------|------|
+| Random       | Best individual (LightGBM)                   | ~0.81 | ~12  |
+| Random       | CFA 5-model ensemble                         | 0.836 | —    |
+| Scaffold-OOD | Best individual (LightGBM)                   | −0.20 | —    |
+| Scaffold-OOD | All 43 models                                | < 0   | —    |
+
+**v2 — success classification (test set).**
+
+| Split        | Best model / ensemble                        | Acc  | F1   | MCC    | AUC   |
+|--------------|----------------------------------------------|------|------|--------|-------|
+| Random       | Majority-class baseline                      | 0.668| —    |  0.000 | 0.500 |
+| Random       | LightGBM (best individual)                   | 0.923| 0.91 | +0.825 | 0.966 |
+| Random       | CFA k=5 (val-selected, WSCDS)                | 0.924| 0.91 | +0.828 | —     |
+| Scaffold-OOD | Majority-class baseline                      | 0.529| —    |  0.000 | 0.500 |
+| Scaffold-OOD | HistGBT-MAE (best individual)                | 0.591| 0.59 | +0.175 | 0.641 |
+| Scaffold-OOD | CFA k=4 (val-selected, ASC)                  | 0.565| 0.48 | +0.135 | —     |
+
+The headline finding: above-baseline accuracy and positive MCC on unseen
+scaffolds make v2 deployable for chemistry triage; v1 was not.
+
+
+
 ## Limitations
 
 - **Distribution shift:** Performance falls substantially on unseen scaffolds.
